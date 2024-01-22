@@ -3,7 +3,7 @@
 
 ## What does this do?
 
-[Clojure](https://clojure.org) is one of my favourite lisps. And lisps are generally better prototyping environments than many others. __Of course, am not starting a war on this topic - your mileage will vary_. I started working with [ROS2](https://github.com/ros2/ros2) in early 2023 and found that, unlike `ROS1`, there are no supported lisp bindings. The application I was building/prototyping was in a lisp (clojure) and I didn't want to redo that part. So I decided to spend some energy and create the binding I needed to proceed.
+[Clojure](https://clojure.org) is one of my favourite lisps. And lisps are generally better prototyping environments than many others. _Of course, am not starting a war on this topic - your mileage will vary_. I started working with [ROS2](https://github.com/ros2/ros2) in early 2023 and found that, unlike `ROS1`, there are no supported lisp bindings. The application I was building/prototyping was in a lisp (clojure) and I didn't want to redo that part. So I decided to spend some energy and create the binding I needed to proceed.
 
 While my solution is far from optimal, this is a first way forward. And am already working on a better solution that will also be pushed into this repo.
 
