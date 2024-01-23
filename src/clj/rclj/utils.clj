@@ -3,8 +3,9 @@
             [taoensso.timbre        :as logger]))
 
 (defn -has-fields-and-field-types-method?
+  "All RCL message objects have a method called get_fields_and_field_types."
   [data]
-  (py/hasattr? data "get_fields_and_field_types"))
+  (py/has-attr? data "get_fields_and_field_types"))
 
 (defn -is-simple-python-type?
   [data]
@@ -16,6 +17,7 @@
         :else          false))
 
 (defn -is-iterable?
+  "Iterables need to stepped into. So identify them."
   [data]
   (py/has-attr? data "__iter__"))
 
